@@ -1,7 +1,28 @@
-html {
-
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 1000px;
+  overflow: hidden;
 }
 
-#carre {
-  background-color:red;
+#animationSection {
+  height: 100%;
+  background-image: url("../../img/brush.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pictureNameAnimation {
+  width: 0%;
+  height: 0%;
+}
+
+#pictureLogoAnimation {
+  width: 0%;
+  height: 0%;
+}
+
+footer {
+  background-color: #564865;
 }
