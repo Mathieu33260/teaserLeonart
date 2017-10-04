@@ -1,16 +1,21 @@
 
-var nom = document.getElementById('pictureNameAnimation');
-var logo = document.getElementById('pictureLogoAnimation');
+var container = document.getElementById('containerBlock');
+var slogan = document.getElementById('slogan')
+var section = document.getElementById('animationSection');
 var tl = new TimelineLite();
 
-tl.add(TweenLite.to(nom, 1.5, {width:400, height:300}));
-tl.add(TweenLite.to(logo, 1.5, {width:200, height:170}));
-tl.add(TweenLite.to(nom, 1.8, {opacity:0}));
-TweenLite.to(logo, 1.8, {opacity:0, delay:3});
-tl.call(displayContainer);
+tl.from(container, 1, {
+	scale: 0
+})
+.to(container, 1,{
+	top: "-40%"
+});
+tl.from(slogan, 1, {
+	left: -500,
+	opacity: 0
+});
 
-function displayContainer() {
-  document.getElementById('wallpaperSection').removeChild(document.getElementById('animationSection'));
-
-  delete containerDelete;
-}
+// In case we want to remove our block
+/*tl.to(container, 1, {
+	opacity: 0
+})*/
