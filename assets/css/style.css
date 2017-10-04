@@ -5,20 +5,19 @@ html, body {
   overflow: hidden;
 }
 
-#animationSection {
+#wallpaperSection {
   height: 100%;
   background-image: url("../../img/brush.png");
+}
+
+#animationSection {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#pictureNameAnimation {
-  width: 0%;
-  height: 0%;
-}
-
-#pictureLogoAnimation {
+#animationSection img {
   width: 0%;
   height: 0%;
 }
