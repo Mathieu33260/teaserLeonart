@@ -1,16 +1,25 @@
 
-var nom = document.getElementById('pictureNameAnimation');
+var namePicture = document.getElementById('pictureNameAnimation');
 var logo = document.getElementById('pictureLogoAnimation');
-var tl = new TimelineLite();
+var title = document.getElementById('pictureTitle');
 
-tl.add(TweenLite.to(nom, 1.5, {width:400, height:300}));
-tl.add(TweenLite.to(logo, 1.5, {width:200, height:170}));
-tl.add(TweenLite.to(nom, 1.8, {opacity:0}));
-TweenLite.to(logo, 1.8, {opacity:0, delay:3});
-tl.call(displayContainer);
+window.onload = function opening() {
+  var tl = new TimelineLite();
+
+  tl.add(TweenLite.from(namePicture, 1.5, {autoAlpha:0, scale:0.5}));
+  TweenLite.from(logo, 1.5, {autoAlpha:0, scale:0.5}, 0);
+  tl.add(TweenLite.to(namePicture, 1.8, {opacity:0}));
+  TweenLite.to(logo, 1.8, {opacity:0, delay:1.5});
+  tl.call(deleteAnimation);
+
+  displayContainer();
+}
 
 function displayContainer() {
-  document.getElementById('wallpaperSection').removeChild(document.getElementById('animationSection'));
+  var tlContainer = new TimelineLite();
+}
 
+function deleteAnimation() {
+  document.getElementById('wallpaperSection').removeChild(document.getElementById('animationSection'));
   delete containerDelete;
 }
