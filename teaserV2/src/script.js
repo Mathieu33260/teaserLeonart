@@ -1,14 +1,19 @@
 var mc = document.getElementById("a3h");
 
-TweenMax.to('#a1t', 2, {
-  scale:.1, 
-  delay:.5, 
+TweenMax.fromTo('#a1t', 2, {
+  scale:0,
+    transformOrigin:'center bottom', 
+ 
+},
+{
   transformOrigin:'center bottom', 
+  scale:1,
+  delay:.5, 
   ease:Elastic.easeInOut, 
-  repeat:-1, 
   repeatDelay:.5,
   yoyo:true
-})
+}
+)
 
 TweenMax.to('#a2r', 2, {
   y:"-50px", 
@@ -39,12 +44,28 @@ transformOrigin: 'center center',
 ease:Bounce.easeInOut,
 yoyo:true})
 
-TweenMax.to('#a3v', 2, {
+TweenMax.fromTo('#a3v', 2, {
+  width:"0",
+  height:"0",
+  transformOrigin:'center center'
+},
+  {width:39.365,
+  height:109.706,
   rotation:360, 
   delay:.5, 
-  transformOrigin:'center center', 
   ease:Expo.easeInOut, 
   repeatDelay:1,
+  yoyo:true})
+
+
+
+TweenMax.fromTo('#b6r', 2, {
+  width:"0px"
+},
+{
+  width:"30.365px",
+  delay:.5,
+  ease:Expo.easeInOut,
   yoyo:true
 })
 
@@ -87,15 +108,45 @@ TweenMax.to('#b1r', 1, {
   repeatDelay:.5,
   yoyo:true
 })
-TweenMax.to('#b1l', 1, {
+TweenMax.fromTo('#b1l', 1, {
   scaleX:0,
-  delay:.75, 
-  transformOrigin:'left center', 
+  
+},
+{
+  scaleX: 1,
+    delay:.75, 
+    transformOrigin:'left center', 
   ease:Elastic.easeInOut, 
-  repeat:-1, 
   repeatDelay:.2,
   yoyo:true
-})
+}
+  )
+
+TweenMax.fromTo('#a3y', 2, {
+  scale:0,
+  delay:.5,
+  ease:Elastic.easeInOut,
+  yoyo:true
+},
+{
+  scale:1,
+  delay:.5,
+  yoyo: true,
+  ease:Elastic.easeInOut})
+
+TweenMax.fromTo('#a3z', 2, {
+  scale:0,
+  delay:.5,
+  transformOrigin: 'center center',
+  ease:Elastic.easeInOut,
+  yoyo:true
+},
+{
+  scale:1,
+  rotation:360,
+  delay:.5,
+  yoyo: true,
+  ease:Elastic.easeInOut})
 
 TweenMax.to('#b2t', 1.5, {
   scale:.1, 
@@ -116,16 +167,23 @@ TweenMax.to('#b3v', 1, {
   repeatDelay:.5,
   yoyo:true
 })
-TweenMax.to('#b3h', 1.5, {
+TweenMax.fromTo('#b3h', 1.5, {
+  y:"-60px"
+},
+{
   y:"+40px", 
   delay:.2, 
   transformOrigin:'center center', 
   ease:Elastic.easeInOut, 
   repeatDelay:1,
   yoyo:true
+
 })
-TweenMax.to('#b4h', 1.5, {
-  y:"+80px", 
+TweenMax.fromTo('#b4h', 1.5, {
+  y:"-40px"
+},
+{
+   y:"+80px", 
   delay:.4, 
   transformOrigin:'center center', 
   ease:Elastic.easeInOut, 
@@ -133,6 +191,18 @@ TweenMax.to('#b4h', 1.5, {
   yoyo:true
 })
 
+TweenMax.fromTo('#b5h', 1.5, {
+  y:-100, 
+
+},
+{
+  y:0.9,
+  delay:.5, 
+  transformOrigin:'center center', 
+  ease:Elastic.easeInOut, 
+  repeatDelay:1,
+  yoyo:true
+})
 
 TweenMax.to('#b4r', 1.5, {
   rotation:40, 
@@ -167,6 +237,28 @@ TweenMax.fromTo('#b5b', 1, {
   yoyo:true
 })
 
+TweenMax.fromTo('#b6b', 1, {
+  scale:0, 
+},
+{
+  scale: 1,
+  delay:1, 
+  ease:Expo.easeInOut, 
+  repeatDelay:1,
+  yoyo:true
+})
+
+TweenMax.fromTo('#b2l', 2, {
+  scale:0
+},
+{
+  scale:1,
+  rotation: 360,
+  delay:.5, 
+  ease:Expo.easeInOut, 
+  repeatDelay:1,
+  yoyo:true
+})
 
 TweenMax.to('#b6l', 1, {
   scaleX:0,
@@ -177,12 +269,4 @@ TweenMax.to('#b6l', 1, {
   repeatDelay:.2,
   yoyo:true
 })
-TweenMax.to('#b6r', .9, {
-  scaleY:3,
-  delay:.6, 
-  transformOrigin:'center bottom', 
-  ease:Elastic.easeInOut, 
-  repeat:-1, 
-  repeatDelay:.2,
-  yoyo:true
-})
+
