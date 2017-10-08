@@ -248,16 +248,18 @@ TweenMax.fromTo('#b6b', 1, {
   yoyo:true
 })
 
-TweenMax.fromTo('#b2l', 2, {
-  scale:0
+
+TweenMax.fromTo('#containerAnim', 2, {
+  width:"100%"
 },
 {
-  scale:1,
-  rotation: 360,
-  delay:.5, 
+  width: "50%",
+  delay:2, 
   ease:Expo.easeInOut, 
   repeatDelay:1,
+  transformOrigin: 'center center',
   yoyo:true
+
 })
 
 TweenMax.to('#b6l', 1, {
