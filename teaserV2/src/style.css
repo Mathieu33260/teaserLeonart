@@ -14,7 +14,7 @@ body{
 	overflow: hidden;
 	left: -300px;
 	bottom: 200px;
-	background-color: lightgrey;
+	background-color: #DCDCDC;
 	transform: rotate(20deg);
 	z-index: -9999;
 }
