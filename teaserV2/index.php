@@ -30,30 +30,36 @@
 		<polygon id="b1l" fill="#3BB889" points="410,110.5 338,0 338,110.5 	"/>
 			
 			<polygon id="a1t" fill="#DC3B7D" points="475,0 425,110 525,110"/>
-					<!--	<polygon id="a1t" fill="#3BB889" points="475,0 447.5,60 502.5,60"/>-->
-
-		<polygon id="b2l" fill="#3BB889" points="618,110.5 543,31 543,110.5 	"/>
-	<circle id="b6b" fill="#FCB915" cx="580.926" cy="38.005" r="38.626"/>
+		<polygon id="b2l" fill="#3BB889" points="618,110.5 543,29 543,110.5 	"/>
+	<circle id="b6b" fill="#DB3C7D" cx="580.926" cy="38.005" r="38.626"/>
 	<rect id="a3y" x="658.974" y="0.903" fill="#33B0E5" width="39.365" height="109.706"/>
 	<rect class="mult" id="a3z" x="640.974" y="0.903" fill="#DA3F8A" width="74.857" height="34.203"/>
 	</g>
 </svg>
 </div>
 </div>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-<?php
 
+<form method="POST">
+	<input type="email" name="mail" >
+	<input type="submit" value="Send">
+</form>
+<?php
+$mail = $_POST["mail"];
 $servername = "playfanfipddb.mysql.db";
 $username = "playfanfipddb";
 $password = "Dawinweb123";
 $dbname = "playfanfipddb";
 
+try{
+	$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$sql = "INSERT INTO testMail (mail) VALUES ('$mail')";
+	$conn->exec($sql);
+	echo "SUCCESS";
+}catch(PDOException $e)
+{
+}
+$conn = null;
 ?>
 </body>
 	<script type="text/javascript" src="src/script.js"></script>
