@@ -1,3 +1,8 @@
+body, html{
+	margin: 0;
+	padding: 0;
+}
+
 .mult{
   mix-blend-mode: multiply;
 }
@@ -18,8 +23,58 @@
 	align-items: center;
 	justify-content: center;
 }
-p{
+#containerAnim h2{
 	font-family: "Source Sans Pro", sans-serif;
-	font-weight: 100;
-	font-size: 22px;
+	font-weight: 400;
+	font-size: 28px;
+	color: #3BB889;
+	position: relative;
+	display: inline-block;
+}
+
+#pageContainer{
+	overflow: hidden;
+}
+#text{
+	width: 500px;
+	height: 200px;
+	margin-left: 100px;
+}
+#text h1{
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 800;
+	font-size: 28px;
+	position: relative;
+	display: inline-block;
+	color: #FCB915;
+}
+
+#formContainer{
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	padding: 30px;
+}
+
+#formContainer h1{
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 800;
+	font-size: 28px;
+	position: relative;
+	display: inline-block;
+	color: #FCB915;
+}
+
+#text p{
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 400;
+	font-size: 21px;
+}
+
+#containerImg{
+	position: absolute;
+	width: 500px;
+	margin: 0 auto;
+	border: 2px solid red;
 }

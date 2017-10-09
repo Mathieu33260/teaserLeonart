@@ -1,5 +1,10 @@
 var mc = document.getElementById("a3h");
 
+var scene = document.getElementById('containerAnim');
+
+var parallax = new Parallax(scene);
+
+
 TweenMax.fromTo('#a1t', 2, {
   scale:0,
     transformOrigin:'center bottom', 
@@ -225,6 +230,16 @@ TweenMax.to('#b5s', 1.5, {
   repeatDelay:1,
   yoyo:true
 })
+
+TweenMax.fromTo('#h2title', 2, {
+  opacity:0,
+  yoyo:true
+},
+{
+  opacity: 1,
+  delay:4
+})
+
 TweenMax.fromTo('#b5b', 1, {
   scale:0, 
 },
@@ -251,10 +266,11 @@ TweenMax.fromTo('#b6b', 1, {
 
 TweenMax.fromTo('#containerAnim', 2, {
   width:"100%",
-  "margin-top": "300px"
+  "margin-top": 300
 },
 {
-  "margin-top": 0,
+  "margin-top": 50,
+  "margin-left": "10%",
   width: "60%",
   delay:2, 
   ease:Expo.easeInOut, 
