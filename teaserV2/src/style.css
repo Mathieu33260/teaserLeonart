@@ -68,9 +68,14 @@ body{
 	font-size: 28px;
 }
 
-#formContainer img {
-	width: 10%;
-	float: none;
+#socialNetwork{
+	width: 80%;
+}
+
+#socialNetwork img {
+	width: 4%;
+	float: right;
+	clear: both;
 }
 
 #containerImg{
@@ -118,7 +123,7 @@ body{
 	width: 200px;
 	border-radius: 50%;
 	background-color: #FCB915;
-	
+
 }
 
 /*********** Form Animation *******************/
@@ -272,4 +277,3 @@ body{
   -webkit-animation-duration: 1.4s;
           animation-duration: 1.4s;
 }
-
