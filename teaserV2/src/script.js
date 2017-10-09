@@ -250,6 +250,22 @@ TweenMax.fromTo('#circles', 2, {
   opacity: 1,
   delay:4
 })
+TweenMax.fromTo('#formContainer', 2, {
+  opacity:0,
+  yoyo:true
+},
+{
+  opacity: 1,
+  delay:4
+})
+TweenMax.fromTo('#containerImg', 2, {
+  opacity:0,
+  yoyo:true
+},
+{
+  opacity: 1,
+  delay:4
+})
 
 TweenMax.fromTo('#b5b', 1, {
   scale:0, 
