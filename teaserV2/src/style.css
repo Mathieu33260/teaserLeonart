@@ -1,6 +1,7 @@
-body, html{
+body{
 	margin: 0;
 	padding: 0;
+	background: url('../Background.png') no-repeat;
 }
 
 .mult{
@@ -38,7 +39,7 @@ body, html{
 #text{
 	width: 500px;
 	height: 200px;
-	margin-left: 100px;
+	margin-left: 20%;
 }
 #text h1{
 	font-family: "Source Sans Pro", sans-serif;
@@ -69,7 +70,7 @@ body, html{
 #text p{
 	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 400;
-	font-size: 21px;
+	font-size: 28px;
 }
 
 #containerImg{
@@ -77,4 +78,44 @@ body, html{
 	width: 500px;
 	margin: 0 auto;
 	border: 2px solid red;
+}
+
+#circleGreen{
+	position: absolute;
+	right: -150px;
+	top: 5%;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	background-color: #3BB889;
+}
+
+#circlePink{
+	position: absolute;
+	left: -20px;
+	bottom: 15%;
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	background-color: #DA3F8A;
+}
+
+#circleBlue{
+	position: absolute;
+	left: 10%;
+	bottom: -6%;
+	height: 190px;
+	width: 190px;
+	border-radius: 50%;
+	background-color: #33B0E5;
+}
+
+#circleYellow{
+	position: absolute;
+	right: -50px;
+	top: 45%;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background-color: #FCB915;
 }
