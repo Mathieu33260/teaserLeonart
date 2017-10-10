@@ -1,3 +1,4 @@
+
 TweenMax.fromTo('#a1t', 2, {
   scale:0,
     transformOrigin:'center bottom', 
@@ -43,12 +44,10 @@ ease:Bounce.easeInOut,
 yoyo:true})
 
 TweenMax.fromTo('#a3v', 2, {
-  width:"0",
-  height:"0",
+  scale: 0,
   transformOrigin:'center center'
 },
-  {width:39.365,
-  height:109.706,
+  {scale: 1,
   rotation:360, 
   delay:.5, 
   ease:Expo.easeInOut, 
@@ -58,10 +57,10 @@ TweenMax.fromTo('#a3v', 2, {
 
 
 TweenMax.fromTo('#b6r', 2, {
-  width:"0px"
+  scale: 0
 },
 {
-  width:"30.365px",
+  scale: 1,
   delay:.5,
   ease:Expo.easeInOut,
   yoyo:true
@@ -251,6 +250,14 @@ TweenMax.fromTo('#circles', 2, {
   delay:4
 })
 TweenMax.fromTo('#formContainer', 2, {
+  opacity:0,
+  yoyo:true
+},
+{
+  opacity: 1,
+  delay:4
+})
+TweenMax.fromTo('footer', 2, {
   opacity:0,
   yoyo:true
 },

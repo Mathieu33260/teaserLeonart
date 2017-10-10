@@ -19,7 +19,7 @@
 <g id="bg">
 	</g>
 
-	<rect id="a3v" x="28.974" y="0.903" fill="#33B0E5" width="39.365" height="109.706"/>
+	<rect id="a3v" x="28.974" y="0.903" fill="#33B0E5"/>
 	<rect class="mult" id="a3h" x="28.974" y="76.903" fill="#DA3F8A" width="74.857" height="34.203"/>
 	<rect class="mult" id="b3h" x="120.939" y="0.903" fill="#FCB915" width="74.858" height="28.202"/>
 	<rect class="mult" id="b4h" x="120.939" y="0.903" fill="#FCB915" width="74.858" height="28.202"/>
