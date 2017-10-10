@@ -2,6 +2,7 @@
 <html>
 
 <head>
+	<meta charset="utf-8"/>
 	<script type="text/javascript" src="src/minified/TweenMax.min.js"></script>
 	<script type="text/javascript" src="src/script.js"></script>
 	<link rel="icon" type="image/png" href="favicon.png" />
@@ -13,12 +14,14 @@
 </head>
 
 <body>
+<div id="rectangle">
+</div>
 	<div id="circles">
 	<div id="circleGreen"></div>
 	<div id="circleBlue"></div>
 	<div id="circlePink"></div>
 	<div id="circleYellow"></div>
-</div>
+	</div>
 <div id="container">
 	<div id="containerAnim">
 	  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="30 0 686 110" xml:space="preserve">
@@ -57,17 +60,20 @@
 		<form class="subscription">
 			<input type="checkbox" id="open" class="btn-open">
 			<label class="btn-open-label" for="open">souscrire</label>
-			<input class="subscription-input" type="email" value="email"/>
+			<input class="subscription-input" type="email" placeholder="email"/>
 			<button class="btn-submit" type="submit">OK</button>
 		</form>
 	</div>
-	<div id="socialNetwork">
-		<img src="../img/iconeFB.png" alt="icon facebook" />
-		<img src="../img/iconeTwitter.png" alt="icon twitter" />
-	</div>
+	
 	<div id="containerImg">
 		<img src="Sculpture2.png" alt="Sculpture" />
 	</div>
+	<footer>
+		<div id="socialNetwork">
+		<img src="../img/iconeFB.png" alt="icon facebook" />
+		<img src="../img/iconeTwitter.png" alt="icon twitter" />
+	</div>
+</footer>
 </body>
 <script type="text/javascript" src="src/script.js"></script>
 
