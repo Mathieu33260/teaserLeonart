@@ -1,332 +1,341 @@
 body{
-	margin: 0;
-	padding: 0;
-  background-color: #D1D1D1;
-  overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: url('../src/test.svg');  overflow: hidden;
+    background-repeat: no-repeat;
 }
 
 .mult{
-  mix-blend-mode: multiply;
+    mix-blend-mode: multiply;
 }
 
-
+#socialNetwork{
+    display: inline;
+    width: 100%;
+}
+#socialNetwork img{
+    width: 10%;
+}
 #a3h{
 }
 
 #b1l{
-	transform-origin: (100,200);
+    transform-origin:(100,200);
 }
 
 #containerAnim{
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 #container{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #containerAnim h2{
-font-family: 'Lobster', cursive;
-	font-weight: 600;
-	font-size: 28px;
-	color: #3BB889;
-	position: relative;
-	display: inline-block;
+    font-family: 'Lobster', cursive;
+    font-weight: 600;
+    font-size: 28px;
+    color: #3BB889;
+    position: relative;
+    display: inline-block;
 
 }
+.fade{
+    display:none;
+}
 #text{
-	width: 40%;
-	margin-left: 20%;
+    width: 40%;
+    margin-left: 20%;
 }
 #text h1{
-font-family: 'Lobster', cursive;
-	font-weight: 800;
-	font-size: 28px;
-	position: relative;
-	color: #DB3C7D;
+    font-family: 'Lobster', cursive;
+    font-weight: 800;
+    font-size: 28px;
+    position: relative;
+    color: #DB3C7D;
 }
 
 #formContainer{
-	float: right;
-	margin-right: 10%;
-	margin-top: 5%;
-	text-align: center;
+    float: right;
+    margin-right: 10%;
+    margin-top: 5%;
+    text-align: center;
 }
 
 #formContainer h1{
-font-family: 'Lobster', cursive;
-	font-size: 28px;
-	color: #DB3C7D;
+    font-family: 'Lobster', cursive;
+    font-size: 28px;
+    color: #DB3C7D;
 }
 
 #text p{
-	font-family: "Roboto", sans-serif;
-	font-weight: 100;
-	font-size: 28px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 28px;
 }
 
 #containerImg{
-  	position: relative;
-	width: 20%;
-	margin-left: auto;
-	margin-right: auto;
+    position: relative;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+#containerImg2{
+    display: none;
+}
+/*********** Circle *******************/
 #circleGreen{
-	position: absolute;
-	right: -150px;
-	top: 5%;
-	height: 300px;
-	width: 300px;
-	border-radius: 50%;
-	background-color: #3BB889;
+    position: absolute;
+    right: -150px;
+    top: 5%;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: #3BB889;
 }
 
 #circlePink{
-	position: absolute;
-	left: -10%;
-	bottom: 15%;
-	height: 300px;
-	width: 300px;
-	border-radius: 50%;
-	background-color: #DA3F8A;
+    position: absolute;
+    left: -10%;
+    bottom: 15%;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: #DA3F8A;
 }
 
 #circleBlue{
-	position: absolute;
-	left: 10%;
-	bottom: -6%;
-	height: 190px;
-	width: 190px;
-	border-radius: 50%;
-	background-color: #33B0E5;
+    position: absolute;
+    left: 10%;
+    bottom: -6%;
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    background-color: #33B0E5;
 }
 
 #circleYellow{
-	position: absolute;
-	right: -50px;
-	top: 45%;
-	height: 200px;
-	width: 200px;
-	border-radius: 50%;
-	background-color: #FCB915;
+    position: absolute;
+    right: -50px;
+    top: 45%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #FCB915;
 
 }
+
 
 /*********** Form Animation *******************/
 
 @-webkit-keyframes input {
-  0% {
-    width: 62px;
-  }
-  70% {
-    width: 100%;
-  }
-  80% {
-    width: 90%;
-  }
-  100% {
-    width: 100%;
-  }
+    0% {
+        width: 62px;
+    }
+    70% {
+        width: 100%;
+    }
+    80% {
+        width: 90%;
+    }
+    100% {
+        width: 100%;
+    }
 }
 @keyframes input {
-  0% {
-    width: 62px;
-  }
-  70% {
-    width: 100%;
-  }
-  80% {
-    width: 90%;
-  }
-  100% {
-    width: 100%;
-  }
+    0% {
+        width: 62px;
+    }
+    70% {
+        width: 100%;
+    }
+    80% {
+        width: 90%;
+    }
+    100% {
+        width: 100%;
+    }
 }
 @-webkit-keyframes button {
-  0% {
-    left: 66px;
-  }
-  70% {
-    left: 100%;
-  }
-  80% {
-    left: 90%;
-  }
-  100% {
-    left: calc(100% + 2px);
-  }
+    0% {
+        left: 66px;
+    }
+    70% {
+        left: 100%;
+    }
+    80% {
+        left: 90%;
+    }
+    100% {
+        left: calc(100% + 2px);
+    }
 }
 @keyframes button {
-  0% {
-    left: 66px;
-  }
-  70% {
-    left: 100%;
-  }
-  80% {
-    left: 90%;
-  }
-  100% {
-    left: calc(100% + 2px);
-  }
+    0% {
+        left: 66px;
+    }
+    70% {
+        left: 100%;
+    }
+    80% {
+        left: 90%;
+    }
+    100% {
+        left: calc(100% + 2px);
+    }
 }
 
 .subscription {
-  display: block;
-  box-sizing: border-box;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 400px;
-  text-align: center;
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    text-align: center;
 }
 .subscription-input {
-  display: none;
-  box-sizing: border-box;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-  padding-right: 24px;
-  width: 100%;
-  min-width: 0px;
-  height: 64px;
-  background-color: rgba(255, 255, 255, 0.45);
-  border-style: none;
-  border-radius: 35px;
-  font-family: "Arial";
-  font-size: 16px;
-  color: #000;
-  box-shadow: inset 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  outline: none;
-  -webkit-animation-name: input;
-          animation-name: input;
-  -webkit-animation-duration: 1.4s;
-          animation-duration: 1.4s;
+    display: none;
+    box-sizing: border-box;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+    min-width: 0px;
+    height: 64px;
+    background-color: rgba(255, 255, 255, 0.45);
+    border-style: none;
+    border-radius: 35px;
+    font-family: "Arial";
+    font-size: 16px;
+    color: #000;
+    box-shadow: inset 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    outline: none;
+    -webkit-animation-name: input;
+    animation-name: input;
+    -webkit-animation-duration: 1.4s;
+    animation-duration: 1.4s;
 }
 
+/*********** BTN *******************/
+
 .btn-open {
-  display: none;
-  box-sizing: border-box;
+    display: none;
+    box-sizing: border-box;
 }
 
 .btn-open:checked + .btn-open-label {
-  display: none;
+    display: none;
 }
 .btn-open:checked ~ .subscription-input {
-  display: block;
-  padding-right: 74px;
+    display: block;
+    padding-right: 74px;
 }
 .btn-open:checked ~ .btn-submit {
-  display: block;
+    display: block;
 }
 
 .btn-open-label {
-  display: inline-block;
-  box-sizing: border-box;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  padding: 15px 50px;
-  border: none;
-  border-radius: 30px;
-  font-family: "Arial";
-  font-size: 16px;
-  color: #fff;
-  text-transform: uppercase;
-  background-color: #f1c40f;
-  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.3), 1px 1px 2px 0px rgba(100, 100, 100, 0.4);
-  cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 30px;
+    font-family: "Arial";
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #f1c40f;
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.3), 1px 1px 2px 0px rgba(100, 100, 100, 0.4);
+    cursor: pointer;
 }
 .btn-open-label:hover, .btn-open-label:focus {
-  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.45);
 }
 
 .btn-submit {
-  display: none;
-  box-sizing: border-box;
-  position: absolute;
-  left: calc(100% + 2px);
-  top: 1px;
-  margin-top: 4px;
-  margin-left: -62px;
-  padding: 18px 16px;
-  border: none;
-  border-radius: 30px;
-  font-family: "Arial";
-  font-size: 16px;
-  color: #fff;
-  text-transform: uppercase;
-  background-color: #f1c40f;
-  box-shadow: 1px 1px 2px 0px rgba(100, 100, 100, 0.4);
-  cursor: pointer;
-  -webkit-animation-name: button;
-          animation-name: button;
-  -webkit-animation-duration: 1.4s;
-          animation-duration: 1.4s;
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    left: calc(100% + 2px);
+    top: 1px;
+    margin-top: 4px;
+    margin-left: -62px;
+    padding: 18px 16px;
+    border: none;
+    border-radius: 30px;
+    font-family: "Arial";
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #f1c40f;
+    box-shadow: 1px 1px 2px 0px rgba(100, 100, 100, 0.4);
+    cursor: pointer;
+    -webkit-animation-name: button;
+    animation-name: button;
+    -webkit-animation-duration: 1.4s;
+    animation-duration: 1.4s;
 }
 
-@media screen and (max-height: 700px){
+
+/*********** Responsive *******************/
+
+@media screen and (max-width: 1360px){
+    body{
+        background-image:none;  overflow: hidden;
+        overflow: initial;
+    }
+    #containerImg{
+        display: none;
+    }
+    #text{
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 50px;
+        text-align: center;
+    }
+    #formContainer{
+        float: initial;
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    #containerAnim{
+        margin: 0 auto !important;
+        margin-top: 30px !important;
+    }
+    #socialNetwork img{
+        width: 6%;
+    }
+
+}
+@media screen and (max-width: 760px){
     #circles{
-    display: none;
-  }
+        display: none;
+    }
+    #formContainer img{
+        display:inline;
+    }
+    #containerImg2{
+        display: inline;
+        position: relative;
+        margin: 0 auto;
+    }
+    #font{
+        font-size: 20px !important;
+    }
+    .subscription-input{
+        margin-left: 40px;
+        width: 90%;
+    }
+
 }
 
 
-@media screen and (max-width: 1024px){
-  body{
-    overflow: initial;
-  }
-  #circles{
-    display: none;
-  }
-	#containerImg{
-		display: none;
-	}
-  #text{
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    margin-top: 50px;
-    text-align: center;
-  }
-  #formContainer{
-    float: initial;
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    margin-top: 50px;
-  }
-  #containerAnim{
-    margin: 0 auto !important;
-    margin-top: 30px !important;
-  }
-  footer{
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-  #socialNetwork{
-    position: relative;
-    display: inline-block;
-    width: 50%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  #socialNetwork img{
-    display: inline-block;
-    position: relative;
-    width: 20%;
-    padding: 0;
-  }
-  h2{
-  font-size: 38px;
-  color: #3BB889;
-}
-  h1{
-  font-size: 38px;
-  color: #3BB889;
-}
-
-}
 
