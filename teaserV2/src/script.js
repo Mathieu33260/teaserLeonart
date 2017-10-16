@@ -300,12 +300,13 @@ TweenMax.fromTo('#b6b', 1, {
 
 TweenMax.fromTo('#containerAnim', 2, {
   width:"100%",
-  "margin-top": 300
+  "margin-top": 200,
+  "margin-left":15
 },
 {
-  "margin-top": 50,
-  "margin-left": "10%",
-  width: "60%",
+  "margin-top": 10,
+  "margin-left": "8%",
+  width: "50%",
   delay:2, 
   ease:Expo.easeInOut, 
   repeatDelay:1,
