@@ -14,12 +14,12 @@
 
 <body>
 
-	<!--<div id="circles">
+	<div id="circles">
 		<div id="circleGreen"></div>
 		<div id="circleBlue"></div>
 		<div id="circlePink"></div>
 		<div id="circleYellow"></div>
-	</div>-->
+	</div>
 	<div id="container">
 		<div id="containerAnim">
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="30 0 686 110" xml:space="preserve">
@@ -49,16 +49,17 @@
 
 	<div id="text">
 		<h1>Bienvenue chez Léonart</h1>
-		<p id="font">Musée, mairie, offrez à vos visiteurs une expérience immersive (dans l'art) grâce à la réalité augmentée</p>
+		<p id="font">Musée, mairie, offrez à vos visiteurs une expérience immersive dans l'art grâce à la réalité augmentée</p>
 	</div>
 	<div id="formContainer">
 		<img class="fade" src="Sculpture2.png" alt="Sculpture" />
 		<h1>Suivez nous</h1>
-		<form class="subscription">
+		<form id="myForm" class="subscription">
 			<input type="checkbox" id="open" class="btn-open">
 			<label class="btn-open-label" for="open">souscrire</label>
-			<input class="subscription-input" type="email" placeholder="email"/>
-			<button class="btn-submit" type="submit">OK</button>
+			<input id="mailValue" class="subscription-input" type="email" placeholder="email"/>
+			<button class="btn-submit" type="button" onclick="callMail();">OK</button>
+			<div id="collected"></div>
 		</form>
 		<div id="socialNetwork">
 			<a href="https://www.facebook.com/leonartFr/"><img src="img/facebook.svg" alt="icon facebook" /></a>
@@ -72,4 +73,17 @@
 </body>
 <script type="text/javascript" src="src/script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+	function callMail(){
+		var mail = $("#mailValue").val();
+		$.ajax({
+			url:"mailVerification.php",
+			type: "POST",
+			data: {mail: mail},
+			success:function(result){
+				$("#collected").html(result);
+			}
+		});
+	}
+</script>
 </html>
