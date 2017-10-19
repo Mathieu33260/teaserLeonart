@@ -2,47 +2,89 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Leon'Art</title>
-  <link type="text/css" rel="stylesheet" href="assets/css/style.css">
-  <!--CDN links for TweenLite, CSSPlugin, and EasePack-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TimelineLite.min.js"></script>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Site officiel de Léonart. Application de colletion d'eouvre d'art en réalité augmentée" />
+	<script type="text/javascript" src="src/minified/TweenMax.min.js"></script>
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:100" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="src/style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Léonart</title>
 </head>
 
 <body>
-  <div id="name">
-    <img src="img/leonartNom.svg" alt="Leonart">
-  </div>
-  <div id="leftContainer">
-    <h3>Leon'art</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-  </div>
-  <div id="centerContainer">
 
-  </div>
-  <div id="rightContainer">
-    <h3>Suivez-nous</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Duis aute irure dolor
-    </p>
-    <form>
-      <input id="inputField" type="text" />
-      <div class="after"></div>
-      <input type="submit" />
-    </form>
-  </div>
-  <div id="socialNetwork">
-    <img src="img/iconeFB.png" alt="icone facebook">
-    <img src="img/iconeTwitter.png" alt="icone twitter">
-  </div>
+	<div id="circles">
+		<div id="circleGreen"></div>
+		<div id="circleBlue"></div>
+		<div id="circlePink"></div>
+		<div id="circleYellow"></div>
+	</div>
+	<div id="container">
+		<div id="containerAnim">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="30 0 686 110" xml:space="preserve">
+				<defs>
+					<clipPath id="mm1">
+						<rect x="184.279" y="77.308" width="87.764" height="120"></rect>
+					</clipPath>
+				</defs>
+				<g id="bg"></g>
+					<rect id="a3v" x="28.974" y="0.903" fill="#33B0E5" width="39.365" height="109.706"/>
+					<rect class="mult" id="a3h" x="28.974" y="76.903" fill="#DA3F8A" width="74.857" height="34.203"/><rect id="b3h" x="120.939" y="0.903" fill="#FCB915" width="74.858" height="28.202"/>
+					<rect id="b4h" x="120.939" y="0.903" fill="#FCB915" width="74.858" height="28.202"/>
+					<rect id="b5h" x="120.939" y="0.903" fill="#FCB915" width="74.858" height="28.202"/>
+					<circle id="b5b" fill="#DB3C7D" cx="306.926" cy="98.005" r="41.626"/>
+					<circle class="mult" id="b5s" fill="#25B3D6" cx="264.926" cy="54.005" r="15.876" opacity="0"/>
+					<polygon id="b1l" fill="#3BB889" points="410,110.5 338,0 338,110.5 	"/>
+					<rect id="b6r" class="mult" x="378.974" y="0.903" fill="#33B0E5" width="30.365" height="109.706"/>
+					<polygon id="a1t" fill="#DC3B7D" points="475,0 425,110 525,110"/>
+					<polygon id="b2l" fill="#3BB889" points="618,110.5 543,31 543,110.5 	"/>
+					<circle id="b6b" fill="#FCB915" cx="580.926" cy="38.005" r="38.626"/>
+					<rect id="a3y" x="658.974" y="0.903" fill="#33B0E5" width="39.365" height="109.706"/>
+					<rect class="mult" id="a3z" x="640.974" y="0.903" fill="#DA3F8A" width="74.857" height="34.203"/>
+			</svg>
+		<h2 id="sloganTitle">L'art dans la poche</h2>
+		</div>
+	</div>
+
+	<div id="text">
+		<h1>Bienvenue chez Léonart</h1>
+		<p id="font">Musée, mairie, offrez à vos visiteurs une expérience immersive dans l'art grâce à la réalité augmentée</p>
+	</div>
+	<div id="formContainer">
+		<img class="fade" src="Sculpture2.png" alt="Sculpture" />
+		<h1>Suivez nous</h1>
+		<form id="myForm" action="" class="subscription">
+			<input type="checkbox" id="open" class="btn-open">
+			<label class="btn-open-label" for="open">souscrire</label>
+			<input id="mailValue" class="subscription-input" type="email" placeholder="email"/>
+			<button class="btn-submit" type="button" onclick="callMail();">OK</button>
+			<div id="collected"></div>
+		</form>
+		<div id="socialNetwork">
+			<a href="https://www.facebook.com/leonartFr/"><img src="img/facebook.svg" alt="icon facebook" /></a>
+			<a href="https://twitter.com/LeonartFr"><img src="img/twitter.svg" alt="icon twitter" /></a>
+		</div>
+	</div>
+	
+	<div id="containerImg">
+		<img src="Sculpture.png" alt="Sculpture" />
+	</div>
 </body>
-
-<script type="text/javascript" src="script.js"></script>
-
+<script type="text/javascript" src="src/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+	function callMail(){
+		var mail = $("#mailValue").val();
+		$.ajax({
+			url:"mailVerification.php",
+			type: "POST",
+			data: {mail: mail},
+			success:function(result){
+				$("#collected").html(result);
+			}
+		});
+	}
+</script>
 </html>
