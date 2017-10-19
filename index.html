@@ -55,13 +55,13 @@
 	<div id="formContainer">
 		<img class="fade" src="Sculpture2.png" alt="Sculpture" />
 		<h1>Suivez nous</h1>
-		<form id="myForm" action="" class="subscription">
+		<div id="myForm" class="subscription">
 			<input type="checkbox" id="open" class="btn-open">
 			<label class="btn-open-label" for="open">souscrire</label>
-			<input id="mailValue" class="subscription-input" type="email" placeholder="email"/>
+			<input id="mailValue" class="subscription-input" type="email" placeholder="email" onkeypress="if (event.keyCode==13) callMail();"/>
 			<button class="btn-submit" type="button" onclick="callMail();">OK</button>
 			<div id="collected"></div>
-		</form>
+		</div>
 		<div id="socialNetwork">
 			<a href="https://www.facebook.com/leonartFr/"><img src="img/facebook.svg" alt="icon facebook" /></a>
 			<a href="https://twitter.com/LeonartFr"><img src="img/twitter.svg" alt="icon twitter" /></a>
