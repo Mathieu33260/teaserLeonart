@@ -39,7 +39,7 @@ html {
 #containerAnim h2{
     font-family: 'Lobster', cursive;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 40px;
     color: #3BB889;
     position: relative;
     display: inline-block;
@@ -48,6 +48,7 @@ html {
 }
 .fade{
     display:none;
+    width: 60%;
 }
 #text{
     width: 40%;
@@ -56,15 +57,15 @@ html {
 #text h1{
     font-family: 'Lobster', cursive;
     font-weight: 800;
-    font-size: 28px;
+    font-size: 36px;
     position: relative;
     color: #DB3C7D;
 }
 
 #formContainer{
     float: right;
-    margin-right: 8%;
-    margin-top: 0%;
+    margin-right: 15%;
+    margin-top: 5%;
     text-align: center;
 }
 
@@ -81,10 +82,13 @@ html {
 }
 
 #containerImg{
-    position: relative;
-    width: 20%;
+    position: absolute;
+    bottom: 0;
     margin-left: 30%;
     margin-right: auto;
+}
+#containerImg img{
+
 }
 #containerImg2{
     display: none;
@@ -197,7 +201,6 @@ html {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
     text-align: center;
 }
 .subscription-input {
@@ -304,8 +307,9 @@ html {
         display: block;
         position: relative;
         margin: 0 auto;
-        margin-top: 50px;
+        margin-top: -20px;
         text-align: center;
+        width: 60%;
     }
     #formContainer{
         float: initial;
@@ -321,7 +325,18 @@ html {
     #socialNetwork img{
         width: 6%;
     }
+    html{
+        overflow: visible;
+    }
+    .subscription{
+        width: 50%;
+    }
 
+}
+@media screen and (max-height: 800px){
+    #containerImg{
+        display: none;
+    }
 }
 @media screen and (max-width: 760px){
     #circles{
@@ -335,6 +350,19 @@ html {
         position: relative;
         margin: 0 auto;
     }
+    #containerAnim h2{
+        font-size: 26px;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+    #containerAnim{
+        width: 80% !important;
+        margin-top: 10px;
+        margin: 0 !important;
+        padding: 15px;
+    }
     #font{
         font-size: 20px !important;
     }
@@ -342,7 +370,16 @@ html {
         margin-left: 40px;
         width: 90%;
     }
-
+    #socialNetwork img{
+        width: 15%;
+        padding: 20px;
+    }
+    html{
+        overflow: visible;
+    }
+    .subscription{
+        width: 100%;
+    }
 }
 
 

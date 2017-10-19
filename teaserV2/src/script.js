@@ -223,55 +223,62 @@ TweenMax.to('#b5s', 1.5, {
   yoyo:true
 })
 
-TweenMax.fromTo('#h2title', 2, {
+TweenMax.fromTo('#h2title', 1.5, {
   opacity:0,
-  yoyo:true
 },
 {
   opacity: 1,
-  delay:4
+  delay:3
 })
 
-TweenMax.fromTo('#text', 2, {
-  opacity:0,
-  yoyo:true
+TweenMax.fromTo('#sloganTitle', 1.5, {
+  opacity: 0,
 },
 {
   opacity: 1,
-  delay:4
+  delay: 3
 })
 
-TweenMax.fromTo('#circles', 2, {
+TweenMax.fromTo('#text', 1.5, {
   opacity:0,
   yoyo:true
 },
 {
   opacity: 1,
-  delay:4
+  delay:3
 })
-TweenMax.fromTo('#formContainer', 2, {
+
+TweenMax.fromTo('#circles', 1.5, {
   opacity:0,
   yoyo:true
 },
 {
   opacity: 1,
-  delay:4
+  delay:3
 })
-TweenMax.fromTo('footer', 2, {
+TweenMax.fromTo('#formContainer', 1.5, {
   opacity:0,
   yoyo:true
 },
 {
   opacity: 1,
-  delay:4
+  delay:3
 })
-TweenMax.fromTo('#containerImg', 2, {
+TweenMax.fromTo('footer', 1.5, {
   opacity:0,
   yoyo:true
 },
 {
   opacity: 1,
-  delay:4
+  delay:3
+})
+TweenMax.fromTo('#containerImg', 1.5, {
+  opacity:0,
+  yoyo:true
+},
+{
+  opacity: 1,
+  delay:3
 })
 
 TweenMax.fromTo('#b5b', 1, {
