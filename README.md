@@ -33,9 +33,10 @@ Make sure you have PHP installed on your computer.
 * **Florent Michenaud** - *Initial work* - [Fmichenaud](https://github.com/Fmichenaud)
 * **Quentin Dubras** - *Correcting issues* - [QuentinDubras](https://github.com/QuentinDubras)
 * **Morgane Julien** - *Correcting issues* - [MorganeJulien](https://github.com/MorganeJulien)
+* **Mathieu Dumez** - *Correcting issues* - [Mathieu33260](https://github.com/Mathieu33260)
 
 See also the list of [contributors](https://github.com/Mathieu33260/teaserLeonart/graphs/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the Beerware license - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the Beerware license - see the [LICENSE.md](https://github.com/Mathieu33260/teaserLeonart/contributors) file for details
