@@ -366,7 +366,7 @@ html {
     #containerAnim{
         width: 80% !important;
         margin-top: 10px;
-        margin: 0 !important;
+        margin: 0 auto !important;
         padding: 15px;
     }
 
