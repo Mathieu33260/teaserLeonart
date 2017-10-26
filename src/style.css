@@ -374,8 +374,7 @@ html {
         font-size: 20px !important;
     }
     .subscription-input{
-        margin-left: 40px;
-        width: 90%;
+        width: 100%;
     }
     #socialNetwork img{
         width: 15%;
@@ -385,7 +384,7 @@ html {
         overflow: visible;
     }
     .subscription{
-        width: 100%;
+        width: 70%;
     }
 }
 
